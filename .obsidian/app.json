@@ -1,0 +1,9 @@
+{
+  "showLineNumber": false,
+  "showIndentGuide": false,
+  "spellcheck": false,
+  "autoPairBrackets": true,
+  "autoPairMarkdown": true,
+  "vimMode": false,
+  "promptDelete": false
+}

@@ -1,0 +1,267 @@
+{
+  "main": {
+    "id": "a4e48e1208240571",
+    "type": "split",
+    "children": [
+      {
+        "id": "b4a7a91aa89208eb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "06d7b35c30453478",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Drucker Prager Model.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Drucker Prager Model"
+            }
+          },
+          {
+            "id": "a9fcc2259b12922e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Home.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Home"
+            }
+          },
+          {
+            "id": "f8cbb9629fa5315a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Material Point Method.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Material Point Method"
+            }
+          },
+          {
+            "id": "a0d4af3927815c0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Home.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Home"
+            }
+          },
+          {
+            "id": "9f75f19480dd9389",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Equation of State.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Equation of State"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4c950d7cc4e51219",
+    "type": "split",
+    "children": [
+      {
+        "id": "059cd200abe10129",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d9d3d615d46ec5f6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e00305d20586a5fb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1f0702ce6aa33207",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 240
+  },
+  "right": {
+    "id": "fc002703f617dc19",
+    "type": "split",
+    "children": [
+      {
+        "id": "404a5a3f174f07bd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7b1d697d06b6d466",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Home.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Home"
+            }
+          },
+          {
+            "id": "bd53a75c36ebe8b9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Home.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Home"
+            }
+          },
+          {
+            "id": "7e5d97e069512fab",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "517dd2f782a63f8e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "a0d4af3927815c0f",
+  "lastOpenFiles": [
+    "rain/results/rain-ground-3d/velocities.pvd",
+    "rain/results/rain-ground-3d/stresses.pvd",
+    "rain/results/rain-ground-3d/strains.pvd",
+    "rain/results/rain-ground-3d/mesh.pvd",
+    "rain/results/rain-ground-3d/geometry.pvd",
+    "rain/results/rain-ground-3d/strains19900.vtp",
+    "rain/results/rain-ground-3d/stresses19900.vtp",
+    "rain/results/rain-ground-3d/velocities19900.vtp",
+    "rain/results/rain-ground-3d/geometry19900.vtp",
+    "rain/results/rain-ground-3d/particles19900.h5",
+    "rain/results/rain-ground-3d/strains19800.vtp",
+    "Associated vs Non Associated Flow.md",
+    "GIMP Method.md",
+    "Comparison with Grid Methods.md",
+    "Comparison with FDEM.md",
+    "Catastrophic Disruption.md",
+    "Brittle Fracture Criterion.md",
+    "MPM Algorithm Steps.md",
+    "Critical Time Step.md",
+    "Leapfrog Integrator.md",
+    "Home.md",
+    "Yield Surface.md",
+    "DART Mission.md",
+    "Material Point Method.md",
+    "Drucker Prager Model.md",
+    "Plastic Corrector.md",
+    "Future Research Directions.md",
+    "MPM Unique Capabilities.md",
+    "Interplay Material Models and Dynamics.md",
+    "Hayabusa2 Mission.md",
+    "Eros Like Remnant.md",
+    "Asteroid Collision Simulation.md",
+    "Sensitivity on Material Models.md",
+    "Sensitivity on Impact Conditions.md",
+    "Mass Velocity Distribution.md",
+    "Cumulative Mass Distribution.md",
+    "Untitled 1.canvas",
+    "Untitled.canvas"
+  ]
+}

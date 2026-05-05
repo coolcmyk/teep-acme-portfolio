@@ -1,0 +1,72 @@
+{
+  "title": "3D Rain Simulation \u2014 CB-Geo MPM",
+  "mesh": {
+    "mesh": "mesh-3d.txt",
+    "entity_sets": "entity_sets.json",
+    "io_type": "Ascii3D",
+    "check_duplicates": true,
+    "isoparametric": false,
+    "node_type": "N3D",
+    "boundary_conditions": {
+      "velocity_constraints": {
+        "file": "velocity-constraints.txt"
+      },
+      "friction_constraints": {
+        "file": "friction-constraints.txt"
+      }
+    },
+    "cell_type": "ED3H8"
+  },
+  "particles": [
+    {
+      "group_id": 0,
+      "generator": {
+        "type": "file",
+        "material_id": 0,
+        "pset_id": 0,
+        "io_type": "Ascii3D",
+        "particle_type": "P3D",
+        "check_duplicates": true,
+        "location": "particles-3d.txt"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "id": 0,
+      "type": "Newtonian3D",
+      "density": 1000.0,
+      "bulk_modulus": 2200000000.0,
+      "dynamic_viscosity": 0.001
+    }
+  ],
+  "external_loading_conditions": {
+    "gravity": [
+      0.0,
+      0.0,
+      -9.81
+    ]
+  },
+  "analysis": {
+    "type": "MPMExplicit3D",
+    "stress_update": "usf",
+    "locate_particles": true,
+    "dt": 0.0001,
+    "uuid": "rain-3d",
+    "nsteps": 5000,
+    "boundary_friction": 0.3,
+    "damping": {
+      "type": "Cundall",
+      "damping_ratio": 0.05
+    }
+  },
+  "post_processing": {
+    "path": "results/",
+    "vtk": [
+      "stresses",
+      "strains",
+      "velocities"
+    ],
+    "output_steps": 100
+  }
+}

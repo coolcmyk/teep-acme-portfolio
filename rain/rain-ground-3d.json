@@ -1,0 +1,107 @@
+{
+  "title": "3D Rain Colliding with Solid Ground \u2014 CB-Geo MPM",
+  "mesh": {
+    "mesh": "mesh-3d.txt",
+    "entity_sets": "entity_sets.json",
+    "io_type": "Ascii3D",
+    "check_duplicates": true,
+    "isoparametric": false,
+    "node_type": "N3D",
+    "cell_type": "ED3H8",
+    "boundary_conditions": {
+      "velocity_constraints": [
+        {
+          "file": "velocity-constraints.txt"
+        }
+      ],
+      "friction_constraints": [
+        {
+          "file": "friction-constraints.txt"
+        }
+      ]
+    }
+  },
+  "particles": [
+    {
+      "group_id": 0,
+      "generator": {
+        "type": "file",
+        "material_id": 0,
+        "pset_id": 0,
+        "io_type": "Ascii3D",
+        "particle_type": "P3D",
+        "check_duplicates": true,
+        "location": "particles-ground.txt"
+      }
+    },
+    {
+      "group_id": 1,
+      "generator": {
+        "type": "file",
+        "material_id": 1,
+        "pset_id": 1,
+        "io_type": "Ascii3D",
+        "particle_type": "P3D",
+        "check_duplicates": true,
+        "location": "particles-rain.txt"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "id": 0,
+      "type": "LinearElastic3D",
+      "density": 3000.0,
+      "youngs_modulus": 5000000000.0,
+      "poisson_ratio": 0.2
+    },
+    {
+      "id": 1,
+      "type": "Newtonian3D",
+      "density": 1000.0,
+      "bulk_modulus": 2200000.0,
+      "dynamic_viscosity": 0.05
+    }
+  ],
+  "material_sets": [
+    {
+      "material_id": 0,
+      "phase_id": 0,
+      "pset_id": 0
+    },
+    {
+      "material_id": 1,
+      "phase_id": 0,
+      "pset_id": 1
+    }
+  ],
+  "external_loading_conditions": {
+    "gravity": [
+      0.0,
+      0.0,
+      -9.81
+    ]
+  },
+  "analysis": {
+    "type": "MPMExplicit3D",
+    "stress_update": "usf",
+    "locate_particles": false,
+    "dt": 0.0001,
+    "uuid": "rain-ground-3d",
+    "nsteps": 20000,
+    "boundary_friction": 0.4,
+    "damping": {
+      "type": "Cundall",
+      "damping_ratio": 0.05
+    }
+  },
+  "post_processing": {
+    "path": "results/",
+    "vtk": [
+      "stresses",
+      "strains",
+      "velocities"
+    ],
+    "output_steps": 100
+  }
+}
