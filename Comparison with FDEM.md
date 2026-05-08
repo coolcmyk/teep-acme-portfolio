@@ -11,14 +11,14 @@ The Combined Finite-Discrete Element Method (FDEM) is another approach that brid
 
 ### Comparison with MPM
 
-| Aspect | FDEM | MPM |
-|--------|------|-----|
-| Continuum phase | Finite elements | Material points on grid |
-| Fracture treatment | Element separation | Damage variable on particles |
-| Post-fracture | Discrete elements with contact | Material points remain; fragments identified via clustering |
-| Contact handling | DEM-based contact laws | Grid-based contact (non-slip) |
-| Deformation limits | Element distortion before fracture | No distortion limit (grid reset) |
-| Implementation | Requires element splitting/removal | Damage variable handles weakening |
+| Aspect             | FDEM                               | MPM                                                         |
+| ------------------ | ---------------------------------- | ----------------------------------------------------------- |
+| Continuum phase    | Finite elements                    | Material points on grid                                     |
+| Fracture treatment | Element separation                 | Damage variable on particles                                |
+| Post-fracture      | Discrete elements with contact     | Material points remain; fragments identified via clustering |
+| Contact handling   | DEM-based contact laws             | Grid-based contact (non-slip)                               |
+| Deformation limits | Element distortion before fracture | No distortion limit (grid reset)                            |
+| Implementation     | Requires element splitting/removal | Damage variable handles weakening                           |
 
 ### MPM Advantages
 - Explicit fragment tracking without element splitting
