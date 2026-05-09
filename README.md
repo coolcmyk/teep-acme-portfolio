@@ -57,7 +57,16 @@ Output goes to `rain/results/rain-ground-3d/` (200 VTP frames + PVD wrappers).
 paraview rain/results/rain-ground-3d/velocities.pvd
 ```
 
-Or open any `.pvd` file (`velocities`, `stresses`, `strains`, `geometry`, `mesh`). Press **Play** to animate.
+Or open any `.pvd` file (`velocities`, `stresses`, `strains`, `geometry`, `mesh`).
+
+CB-Geo MPM outputs point-only VTP files (no vertices/polys), so you won't see anything with the default "Surface" representation. After opening the PVD:
+
+1. Click **Apply** in the Properties panel (or press Enter)
+2. Change the representation dropdown (top toolbar) from **Surface** → **Point Gaussian**
+3. Adjust the **Gaussian Radius** (or press `Ctrl+Space`, type `Point Gaussian` and tune it there)
+4. Press the **Play** button (▶) to animate
+
+Quick alternative: **Filters → Glyph**, set Glyph Type to **Sphere**, Radius **0.03**, Scale Mode **off**.
 
 ### Simulation details
 
